@@ -1,0 +1,22 @@
+_id: 6385ee26ea080c002bb49d0d
+name: auth
+language: javascript
+timeout: 6
+triggers:
+  loginTrigger:
+    type: http
+    active: true
+    options:
+      method: Post
+      path: /login
+      preflight: true
+  signUpTrigger:
+    options:
+      method: Post
+      path: /signup
+      preflight: true
+    type: http
+    active: true
+env: {}
+memoryLimit: 100
+description: This function is for the authorization examples signup and login.
