@@ -1,0 +1,11 @@
+_id: 6152eb2ad5351a002ec07b2e
+name: stora
+description: storage
+statement:
+  - module: storage
+    action: storage:index
+    resource:
+      include:
+        - "*"
+      exclude:
+        - 611f7049eee0d9002d44b88f

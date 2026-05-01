@@ -1,0 +1,90 @@
+_id: 688cc99c1977bb774f965ebc
+name: Operation Team (Ops Panel)
+description: Operation Team (Ops Panel)
+statement:
+  - module: bucket:data
+    action: bucket:data:create
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: bucket:data
+    action: bucket:data:index
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: bucket:data
+    action: bucket:data:delete
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: bucket:data
+    action: bucket:data:show
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: bucket:data
+    action: bucket:data:stream
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: bucket:data
+    action: bucket:data:update
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: bucket
+    action: bucket:index
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: bucket
+    action: bucket:show
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: passport:identity
+    action: passport:identity:create
+  - module: passport:identity
+    action: passport:identity:delete
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: passport:identity
+    action: passport:identity:show
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: passport:identity
+    action: passport:identity:update
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: passport:identity
+    action: passport:identity:index
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: passport:identity:policy
+    action: passport:identity:policy:add
+    resource:
+      include:
+        - "*/*"
+      exclude: []
+  - module: passport:identity:policy
+    action: passport:identity:policy:remove
+    resource:
+      include:
+        - "*/*"
+      exclude: []

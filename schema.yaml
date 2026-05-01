@@ -1,0 +1,14 @@
+_id: 68ecb5755593d5396e8b6bd4
+name: ../
+language: javascript
+timeout: 6
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /
+      preflight: true
+memoryLimit: 100
+order: 0

@@ -1,0 +1,14 @@
+_id: 68ecb5375593d5396e8b6bc8
+name: /ozi/test
+language: javascript
+timeout: 6
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /
+      preflight: true
+memoryLimit: 100
+order: 2

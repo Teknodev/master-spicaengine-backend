@@ -1,0 +1,12 @@
+_id: 66ebd6c265286f002cf0ed10
+name: Mava
+icon: leaderboard
+components:
+  - name: Ma
+    url: https://example.com
+    type: card
+    ratio: 2/2
+  - name: Ma2
+    url: va2
+    type: card
+    ratio: 2/2

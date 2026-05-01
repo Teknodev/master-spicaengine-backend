@@ -1,0 +1,66 @@
+_id: 664373698e911e002c5556cd
+name: idris
+description: idris
+statement:
+  - module: bucket:data
+    action: bucket:data:index
+    resource:
+      include:
+        - 65a9321eae4f9d002b74945c/*
+      exclude: []
+  - module: bucket:data
+    action: bucket:data:show
+    resource:
+      include:
+        - 65a9321eae4f9d002b74945c/*
+      exclude: []
+  - module: bucket:data
+    action: bucket:data:create
+    resource:
+      include:
+        - 650460a36095ae002d10b730
+      exclude: []
+  - module: bucket:data
+    action: bucket:data:delete
+    resource:
+      include:
+        - 65a9321eae4f9d002b74945c/*
+      exclude: []
+  - module: bucket:data
+    action: bucket:data:stream
+    resource:
+      include:
+        - 65a9321eae4f9d002b74945c/*
+      exclude: []
+  - module: bucket:data
+    action: bucket:data:update
+    resource:
+      include:
+        - 65a9321eae4f9d002b74945c/*
+      exclude: []
+  - module: bucket
+    action: bucket:delete
+    resource:
+      include:
+        - 65a9321eae4f9d002b74945c
+      exclude: []
+  - module: bucket
+    action: bucket:index
+    resource:
+      include:
+        - 65a9321eae4f9d002b74945c
+      exclude: []
+  - module: bucket
+    action: bucket:show
+    resource:
+      include:
+        - 65a9321eae4f9d002b74945c
+      exclude: []
+  - module: bucket
+    action: bucket:update
+    resource:
+      include:
+        - 65a9321eae4f9d002b74945c
+      exclude: []
+  - module: bucket
+    action: bucket:create

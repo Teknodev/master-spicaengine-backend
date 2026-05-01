@@ -1,0 +1,16 @@
+_id: 6389fe98ea080c002bb4b535
+name: Charts
+icon: leaderboard
+components:
+  - name: LineChart
+    url: " https://master.spicaengine.com/api/fn-execute/getDashboard"
+    type: line
+    ratio: 2/2
+  - name: BarChart
+    url: " https://master.spicaengine.com/api/fn-execute/getBar"
+    type: bar
+    ratio: 2/2
+  - name: deneme
+    url: http://localhost:4200/api/fn-execute/chartPie
+    type: pie
+    ratio: 2/2

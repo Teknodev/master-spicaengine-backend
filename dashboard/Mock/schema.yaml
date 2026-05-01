@@ -1,0 +1,10 @@
+_id: 641c3ec1b51b49002ca3fd0a
+name: Mock
+icon: leaderboard
+components:
+  - name: msfn,fnsd
+    url: https://master.spicaengine.com/api/fn-execute/playerAge
+    type: pie
+  - name: sdfasfasfsd
+    url: https://master.spicaengine.com/api/fn-execute/playerAge
+    type: doughnut

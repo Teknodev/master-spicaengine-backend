@@ -1,0 +1,64 @@
+_id: 602b9f7cc532ee002d02112d
+name: Identity Full Access copy
+description: Full access to passport identity service.
+statement:
+  - module: passport:identity
+    action: passport:identity:index
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: passport:identity
+    action: passport:identity:show
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: passport:identity
+    action: passport:identity:update
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: passport:identity
+    action: passport:identity:delete
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: passport:identity
+    action: passport:identity:create
+    resource:
+      include:
+        - ""
+      exclude: []
+  - module: preference
+    action: preference:show
+    resource:
+      include:
+        - passport
+      exclude: []
+  - module: preference
+    action: preference:update
+    resource:
+      include:
+        - passport
+      exclude: []
+  - module: passport:identity:policy
+    action: passport:identity:policy:add
+    resource:
+      include:
+        - "*/*"
+      exclude: []
+  - module: passport:identity:policy
+    action: passport:identity:policy:remove
+    resource:
+      include:
+        - "*/*"
+      exclude: []
+  - module: bucket:data
+    action: bucket:data:create
+    resource:
+      include:
+        - "*"
+      exclude: []

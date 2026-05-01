@@ -1,0 +1,10 @@
+_id: 65a128a9ae4f9d002b7438ea
+name: TestBat
+description: batest
+statement:
+  - module: bucket:data
+    action: bucket:data:create
+    resource:
+      include:
+        - 65a0fe38ae4f9d002b7434a8
+      exclude: []

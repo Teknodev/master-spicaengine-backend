@@ -1,0 +1,6 @@
+_id: 689f19afe07956de2e7386fb
+name: no browse
+description: asdqwe
+statement:
+  - module: storage
+    action: storage:create

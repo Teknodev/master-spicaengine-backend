@@ -1,0 +1,8 @@
+_id: 6687c912551ad7002c5e8be3
+name: enable account test
+icon: leaderboard
+components:
+  - name: test
+    url: https://master.spicaengine.com/api/fn-execute/dashboard/enable-account-card
+    type: card
+    ratio: 2/2

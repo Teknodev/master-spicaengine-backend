@@ -1,0 +1,30 @@
+_id: 6508062f6095ae002d10b9fc
+name: ChatPolicy
+description: This is a policy for chat app
+statement:
+  - module: bucket
+    action: bucket:create
+  - module: bucket
+    action: bucket:delete
+    resource:
+      include:
+        - 650460a36095ae002d10b730
+      exclude: []
+  - module: bucket
+    action: bucket:update
+    resource:
+      include:
+        - 650460a36095ae002d10b730
+      exclude: []
+  - module: bucket
+    action: bucket:show
+    resource:
+      include:
+        - 650460a36095ae002d10b730
+      exclude: []
+  - module: bucket
+    action: bucket:index
+    resource:
+      include:
+        - 650460a36095ae002d10b730
+      exclude: []

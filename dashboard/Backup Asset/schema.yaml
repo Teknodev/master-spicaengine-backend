@@ -1,0 +1,7 @@
+_id: 6399b2cd072513002c47a0f3
+name: Backup Asset
+icon: leaderboard
+components:
+  - name: backup
+    url: api:/fn-execute/dashboard/backup-card
+    type: card

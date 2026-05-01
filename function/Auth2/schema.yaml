@@ -1,0 +1,27 @@
+_id: 69c4ea7c64c3c328da0be5d3
+name: Auth2
+language: javascript
+timeout: 60
+triggers:
+  login:
+    type: http
+    active: true
+    options:
+      path: /login
+      method: Post
+      preflight: true
+      authenticate: []
+      authorize: false
+  logout:
+    type: http
+    active: true
+    options:
+      method: Post
+      path: /logout
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100
+env_vars: []
+secrets: []
+order: 3

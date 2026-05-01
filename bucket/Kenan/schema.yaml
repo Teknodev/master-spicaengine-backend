@@ -1,0 +1,25 @@
+_id: 69ee70991c6858ee21551fd3
+title: Kenan
+description: Describe your new bucket
+icon: view_stream
+primary: title
+readOnly: false
+history: false
+properties:
+  title:
+    type: string
+    title: title
+    description: Title of the row
+    options:
+      translate: false
+  description:
+    type: textarea
+    title: description
+    description: Description of the row
+    options:
+      translate: false
+acl:
+  write: true==true
+  read: true==true
+order: 0
+indexes: []

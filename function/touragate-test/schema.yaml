@@ -1,0 +1,14 @@
+_id: 68d52e3bab84f9729017e1e1
+name: touragate-test
+language: javascript
+timeout: 6
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /
+      preflight: true
+memoryLimit: 100
+order: 5

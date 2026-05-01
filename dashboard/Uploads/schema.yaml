@@ -1,0 +1,8 @@
+_id: 683425aa0faca49323c6c27a
+name: Uploads
+icon: leaderboard
+components:
+  - name: TableInfo
+    url: table.url
+    type: table
+    ratio: 2/2

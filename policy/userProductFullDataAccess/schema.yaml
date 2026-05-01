@@ -1,0 +1,30 @@
+_id: 6501c9376095ae002d10a7b0
+name: userProductFullDataAccess
+description: full bucket access
+statement:
+  - module: bucket
+    action: bucket:create
+  - module: bucket
+    action: bucket:show
+    resource:
+      include:
+        - 6501692b6095ae002d109f51
+      exclude: []
+  - module: bucket
+    action: bucket:update
+    resource:
+      include:
+        - 6501692b6095ae002d109f51
+      exclude: []
+  - module: bucket
+    action: bucket:delete
+    resource:
+      include:
+        - 6501692b6095ae002d109f51
+      exclude: []
+  - module: bucket
+    action: bucket:index
+    resource:
+      include:
+        - 6501692b6095ae002d109f51
+      exclude: []

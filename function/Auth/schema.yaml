@@ -1,0 +1,35 @@
+_id: 69c4e1f3d985e326b49f2bd3
+name: Auth
+language: javascript
+timeout: 60
+triggers:
+  login:
+    type: grpc
+    active: true
+    options:
+      requestParams:
+        - name: email
+          type: string
+        - name: password
+          type: string
+      responseParams:
+        - name: status
+          type: bool
+        - name: message
+          type: string
+  logout:
+    type: grpc
+    active: true
+    options:
+      requestParams:
+        - name: email
+          type: string
+      responseParams:
+        - name: status
+          type: bool
+        - name: message
+          type: string
+memoryLimit: 100
+env_vars: []
+secrets: []
+order: 1

@@ -1,0 +1,7 @@
+_id: 63f8b7222930c3002b860863
+name: Func in Master
+icon: leaderboard
+components:
+  - name: asd
+    url: " https://master.spicaengine.com/api/fn-execute/peoplePoint "
+    type: line

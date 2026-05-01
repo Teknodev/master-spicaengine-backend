@@ -1,0 +1,33 @@
+_id: 69eb4975a6853c217a26f531
+name: newfuncstion
+language: javascript
+timeout: 10
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /
+      preflight: true
+      authenticate: []
+      authorize: false
+  masterDeneme:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /deneme
+      preflight: true
+      authenticate: []
+      authorize: false
+  chartRows:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /chart-rows
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100

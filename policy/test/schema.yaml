@@ -1,0 +1,84 @@
+_id: 602b9f55c532ee002d02112b
+name: test
+description: test
+statement:
+  - module: bucket:data
+    action: bucket:data:show
+    resource:
+      include:
+        - "*/*"
+      exclude:
+        - 60814d69818494002c0a32cc/*
+  - module: bucket:data
+    action: bucket:data:update
+    resource:
+      include:
+        - "*/*"
+      exclude:
+        - 60814d69818494002c0a32cc/*
+  - module: bucket:data
+    action: bucket:data:stream
+    resource:
+      include:
+        - "*/*"
+      exclude:
+        - 60814d69818494002c0a32cc/*
+  - module: bucket:data
+    action: bucket:data:delete
+    resource:
+      include:
+        - "*/*"
+      exclude:
+        - 60814d69818494002c0a32cc/*
+  - module: bucket:data
+    action: bucket:data:index
+    resource:
+      include:
+        - 683d50e6b8b83f3721d9a45e/*
+        - 6527a32c6095ae002d10ef32/1
+      exclude: []
+  - module: bucket:data
+    action: bucket:data:create
+    resource:
+      include:
+        - "*"
+      exclude:
+        - 60814d69818494002c0a32cc
+  - module: function
+    action: function:show
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: function
+    action: function:index
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: bucket
+    action: bucket:create
+  - module: bucket
+    action: bucket:delete
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: bucket
+    action: bucket:index
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: bucket
+    action: bucket:show
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - module: bucket
+    action: bucket:update
+    resource:
+      include:
+        - "*"
+      exclude: []

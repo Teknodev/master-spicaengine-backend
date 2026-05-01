@@ -1,0 +1,8 @@
+_id: 66ebd70465286f002cf0ed12
+name: MavaLava
+icon: leaderboard
+components:
+  - name: Mava
+    url: " https://master.spicaengine.com/api/fn-execute/mava"
+    type: card
+    ratio: 2/2

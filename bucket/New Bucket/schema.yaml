@@ -1,0 +1,49 @@
+_id: 68da8b4bab84f9729017e25e
+title: New Bucket
+description: Describe your new bucket
+icon: view_stream
+primary: title
+readOnly: false
+history: false
+properties:
+  title:
+    type: string
+    title: title
+    description: Title of the row
+    options:
+      position: left
+  description:
+    type: textarea
+    title: description
+    description: Description of the row
+    options:
+      position: right
+  booleannn:
+    type: boolean
+    title: booleannn
+    options:
+      position: bottom
+    default: false
+  aaa:
+    type: string
+    title: aaa
+    options:
+      position: bottom
+  adsadads:
+    type: object
+    title: adsadads
+    options:
+      position: bottom
+    required: []
+    properties:
+      adads:
+        type: string
+        title: adads
+        options:
+          position: bottom
+acl:
+  write: true==true
+  read: true==true
+order: 5
+indexes: []
+required: []

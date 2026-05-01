@@ -1,0 +1,27 @@
+_id: 69e258903354f4959853cc5e
+title: MCP Test Bucket
+description: A bucket created via MCP to test Spica MCP functionality
+primary: name
+properties:
+  name:
+    type: string
+    title: Name
+    description: Name of the item
+  description:
+    type: textarea
+    title: Description
+    description: Description of the item
+  created_at:
+    type: date
+    title: Created At
+    description: Creation date
+  is_active:
+    type: boolean
+    title: Is Active
+    default: true
+acl:
+  read: true==true
+  write: true==true
+history: false
+indexes: []
+icon: view_stream

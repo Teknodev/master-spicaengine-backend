@@ -1,0 +1,21 @@
+_id: 69e258653354f4959853cc57
+name: mcp-test-function
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /mcp-test
+      preflight: true
+      authenticate: []
+      authorize: false
+  scheduler:
+    type: schedule
+    active: true
+    options:
+      frequency: "* * * * *"
+      timezone: UTC
+timeout: 30
+language: javascript
+memoryLimit: 100

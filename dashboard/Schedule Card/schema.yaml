@@ -1,0 +1,7 @@
+_id: 6391deac072513002c474b28
+name: Schedule Card
+icon: leaderboard
+components:
+  - name: Schedule Card
+    url: api://fn-execute/asset/scheduleCard
+    type: card

@@ -1,0 +1,10 @@
+_id: 6850274a99744bf58a7229af
+name: stream
+description: asdasdas
+statement:
+  - module: bucket:data
+    action: bucket:data:stream
+    resource:
+      include:
+        - 68480cc5b8343d99af2eafd0/*
+      exclude: []

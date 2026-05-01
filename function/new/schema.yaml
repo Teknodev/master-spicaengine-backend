@@ -1,0 +1,25 @@
+_id: 69d89838c368e6b2df476fa2
+name: new
+language: javascript
+timeout: 10
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /new
+      preflight: true
+      authenticate: []
+      authorize: false
+  chartPie:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /chartPie
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100
+order: 4

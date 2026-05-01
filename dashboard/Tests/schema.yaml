@@ -1,0 +1,16 @@
+_id: 687a77a6461c5c8719da6fa4
+name: Tests
+icon: leaderboard
+components:
+  - name: TestComp
+    url: zamazingo.comurl
+    type: pie
+    ratio: 2/2
+  - name: asdasd
+    url: http://localhost:4200/api/fn-execute/chartRows
+    type: bar
+    ratio: 2/2
+  - name: AQ
+    url: https://master.spicaengine.com/api/fn-execute/chart-rows
+    type: line
+    ratio: 2/1

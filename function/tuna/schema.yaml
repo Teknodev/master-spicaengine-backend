@@ -1,0 +1,15 @@
+_id: 69ef0d0e73f6063b011473b5
+name: tuna
+language: javascript
+timeout: 10
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /test-tuna
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100

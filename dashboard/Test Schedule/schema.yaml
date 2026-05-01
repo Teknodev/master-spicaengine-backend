@@ -1,0 +1,10 @@
+_id: 6398319e072513002c47946f
+name: Test Schedule
+icon: leaderboard
+components:
+  - name: test
+    url: https://master.spicaengine.com/api/fn-execute/getTestSchedule
+    type: card
+  - name: jhsdsadfsfsd
+    url: https://master.spicaengine.com/api/fn-execute/getTestSchedule
+    type: pie

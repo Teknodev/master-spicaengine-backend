@@ -1,0 +1,8 @@
+_id: 69eb53cda6853c217a26f56c
+name: New Dashboard
+icon: dashboard
+components:
+  - name: asdasd
+    url: http://localhost:4200/api/fn-execute/deneme
+    type: pie
+    ratio: 2/2

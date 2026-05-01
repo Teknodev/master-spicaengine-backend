@@ -1,0 +1,12 @@
+_id: 641819338fb0da002c775038
+name: Player
+icon: leaderboard
+components:
+  - name: sfdjskl;jfsaflksd
+    url: https://master.spicaengine.com/api/fn-execute/playerAge
+    type: doughnut
+    ratio: 1/2
+  - name: kjksdlksdfkjd
+    url: https://master.spicaengine.com/api/fn-execute/playerAge
+    type: polarArea
+    ratio: 2/2
