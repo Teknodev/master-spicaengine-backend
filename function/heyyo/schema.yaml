@@ -1,0 +1,15 @@
+_id: 69f4dd494b51183480ef9f6a
+name: heyyo
+language: javascript
+timeout: 10
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /heyyo
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100
