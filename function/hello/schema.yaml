@@ -1,0 +1,15 @@
+_id: 69f4dc824b51183480ef9f58
+name: hello
+language: javascript
+timeout: 10
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: helloo
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100
