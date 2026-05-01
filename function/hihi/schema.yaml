@@ -1,0 +1,15 @@
+_id: 69f4dcb04b51183480ef9f61
+name: hihi
+language: javascript
+timeout: 10
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /hihi
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100
