@@ -1,0 +1,15 @@
+_id: 69f4db1a65469f6be804f5d0
+name: newone
+language: javascript
+timeout: 10
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /newone
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100

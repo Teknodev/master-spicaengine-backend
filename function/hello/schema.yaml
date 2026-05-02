@@ -1,0 +1,15 @@
+_id: 69f4dbda65469f6be804f5de
+name: hello
+language: javascript
+timeout: 10
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /test123
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100

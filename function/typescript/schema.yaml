@@ -1,0 +1,15 @@
+_id: 69f5c3b865469f6be804f9c0
+name: typescript
+language: typescript
+timeout: 10
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /ts
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100
