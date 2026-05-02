@@ -1,0 +1,15 @@
+_id: 69f5c787d020223fbc33d0d8
+name: first-fn
+language: javascript
+timeout: 10
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /first-fn
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100
