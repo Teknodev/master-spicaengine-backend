@@ -1,0 +1,15 @@
+_id: 69f5c2bdc3ef394e14efaa40
+name: hoho
+language: javascript
+timeout: 10
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /hoho
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100
