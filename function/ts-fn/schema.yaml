@@ -1,0 +1,15 @@
+_id: 69f5c8edd020223fbc33d0e4
+name: ts-fn
+language: javascript
+timeout: 10
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /ts-fn
+      preflight: true
+      authenticate: []
+      authorize: false
+memoryLimit: 100
