@@ -1,14 +1,14 @@
-_id: 69f5c8fed020223fbc33d0ee
-name: ts-fn
-language: typescript
+_id: 69fae2e14e03ce1d4bdd1796
+name: new-fn
+language: javascript
 timeout: 10
 triggers:
   default:
     type: http
     active: true
     options:
-      path: ts-fn
       method: Get
+      path: /testasdqwe
       preflight: true
       authenticate: []
       authorize: false

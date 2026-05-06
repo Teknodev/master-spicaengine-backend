@@ -1,5 +1,5 @@
 {
-  "name": "ts-fn",
+  "name": "new-fn",
   "description": "No description.",
   "version": "0.0.1",
   "private": true,
@@ -9,6 +9,5 @@
     "node.js"
   ],
   "license": "UNLICENSED",
-  "main": ".build/index.mjs",
-  "dependencies": {}
+  "main": ".build/index.mjs"
 }
