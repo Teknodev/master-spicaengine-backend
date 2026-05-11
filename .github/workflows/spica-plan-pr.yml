@@ -1,0 +1,41 @@
+name: Spica Plan on PR Open
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions:
+  contents: read
+
+jobs:
+  spica-plan:
+    runs-on: ubuntu-latest
+    env:
+      SPICA_CONTEXT_NAME: ci
+      SPICA_API_URL: ${{ secrets.SPICA_API_URL }}
+      SPICA_API_KEY: ${{ secrets.SPICA_API_KEY }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate required secrets
+        run: |
+          test -n "$SPICA_API_URL" || (echo "Missing secret: SPICA_API_URL" && exit 1)
+          test -n "$SPICA_API_KEY" || (echo "Missing secret: SPICA_API_KEY" && exit 1)
+
+      - name: Install Spica CLI
+        run: npm install -g @spica/cli@0.18.32
+
+      - name: Configure Spica context
+        run: |
+          spica context set --name "$SPICA_CONTEXT_NAME" --url "$SPICA_API_URL" --apikey "$SPICA_API_KEY"
+          spica context switch "$SPICA_CONTEXT_NAME"
+
+      - name: Run Spica plan
+        run: spica plan --detailed
