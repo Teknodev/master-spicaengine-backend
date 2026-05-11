@@ -1,0 +1,35 @@
+_id: 6a01e3716958b53031de3085
+name: __test_v2_single_explicit__
+statement:
+  - action: bucket:show
+    module: bucket
+    resource:
+      include:
+        - bucketId123
+      exclude: []
+  - action: function:show
+    module: function
+    resource:
+      include:
+        - funcId456
+      exclude: []
+  - action: storage:show
+    module: storage
+    resource:
+      include:
+        - objectId789
+      exclude: []
+  - action: dashboard:show
+    module: dashboard
+    resource:
+      include:
+        - dashId001
+      exclude: []
+  - action: secret:show
+    module: secret
+    resource:
+      include:
+        - secretId002
+      exclude: []
+description: "Valid: SINGLE_SEGMENT explicit include, empty exclude"
+system: false

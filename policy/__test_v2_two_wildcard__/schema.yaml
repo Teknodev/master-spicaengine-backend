@@ -1,0 +1,31 @@
+_id: 6a01e3716958b53031de3091
+name: __test_v2_two_wildcard__
+statement:
+  - action: function:invoke
+    module: function:invoke
+    resource:
+      include:
+        - "*/*"
+      exclude:
+        - "*/excludedFn"
+  - action: passport:apikey:policy:add
+    module: passport:apikey:policy
+    resource:
+      include:
+        - "*/*"
+      exclude: []
+  - action: passport:identity:policy:add
+    module: passport:identity:policy
+    resource:
+      include:
+        - "*/*"
+      exclude:
+        - "*/restrictedPolicy"
+  - action: passport:user:policy:add
+    module: passport:user:policy
+    resource:
+      include:
+        - "*/*"
+      exclude: []
+description: "Valid: TWO_SEGMENT wildcard include with excludes"
+system: false

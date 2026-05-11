@@ -1,0 +1,12 @@
+_id: 6a01e3716958b53031de3083
+name: __test_v2_glob__
+statement:
+  - action: storage:browse
+    module: storage
+    resource:
+      include:
+        - public/*
+      exclude:
+        - private/secret.jpg
+description: "Valid: GLOB storage:browse — include ends with *, max 1 item"
+system: false

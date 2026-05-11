@@ -1,0 +1,44 @@
+_id: 6a01e3716958b53031de3087
+name: __test_v2_single_wildcard__
+statement:
+  - action: bucket:index
+    module: bucket
+    resource:
+      include:
+        - "*"
+      exclude:
+        - excludedBucketId
+  - action: function:index
+    module: function
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - action: storage:index
+    module: storage
+    resource:
+      include:
+        - "*"
+      exclude:
+        - privateFileId
+  - action: passport:apikey:index
+    module: passport:apikey
+    resource:
+      include:
+        - "*"
+      exclude: []
+  - action: passport:identity:index
+    module: passport:identity
+    resource:
+      include:
+        - "*"
+      exclude:
+        - adminIdentityId
+  - action: passport:policy:index
+    module: passport:policy
+    resource:
+      include:
+        - "*"
+      exclude: []
+description: "Valid: SINGLE_SEGMENT wildcard include with excludes"
+system: false
