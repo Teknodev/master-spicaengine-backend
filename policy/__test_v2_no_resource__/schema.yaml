@@ -1,0 +1,61 @@
+_id: 6a01e3716958b53031de3089
+name: __test_v2_no_resource__
+statement:
+  - action: activity:index
+    module: activity
+  - action: activity:delete
+    module: activity
+  - action: asset:index
+    module: asset
+  - action: asset:show
+    module: asset
+  - action: asset:download
+    module: asset
+  - action: asset:install
+    module: asset
+  - action: asset:delete
+    module: asset
+  - action: asset:export
+    module: asset
+  - action: bucket:create
+    module: bucket
+  - action: dashboard:create
+    module: dashboard
+  - action: env-var:create
+    module: env-var
+  - action: function:create
+    module: function
+  - action: function:logs:delete
+    module: function:logs
+  - action: function:logs:index
+    module: function:logs
+  - action: passport:apikey:create
+    module: passport:apikey
+  - action: passport:identity:create
+    module: passport:identity
+  - action: passport:identity:profile
+    module: passport:identity
+  - action: passport:policy:create
+    module: passport:policy
+  - action: passport:strategy:insert
+    module: passport:strategy
+  - action: passport:user:create
+    module: passport:user
+  - action: passport:user:profile
+    module: passport:user
+  - action: secret:create
+    module: secret
+  - action: storage:create
+    module: storage
+  - action: versioncontrol:update
+    module: versioncontrol
+  - action: versioncontrol:show
+    module: versioncontrol
+  - action: webhook:create
+    module: webhook
+  - action: webhook:logs:delete
+    module: webhook:logs
+  - action: webhook:logs:index
+    module: webhook:logs
+description: "Valid: all 28 NO_RESOURCE actions — no resource field"
+system: false

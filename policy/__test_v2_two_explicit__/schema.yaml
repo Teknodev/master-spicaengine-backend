@@ -1,0 +1,29 @@
+_id: 6a01e3716958b53031de308c
+name: __test_v2_two_explicit__
+statement:
+  - action: function:env-var:inject
+    module: function:env-var
+    resource:
+      include:
+        - "*/envVarId"
+      exclude: []
+  - action: function:secret:inject
+    module: function:secret
+    resource:
+      include:
+        - "*/secretId"
+      exclude: []
+  - action: passport:apikey:policy:remove
+    module: passport:apikey:policy
+    resource:
+      include:
+        - "*/policyId"
+      exclude: []
+  - action: passport:identity:policy:remove
+    module: passport:identity:policy
+    resource:
+      include:
+        - "*/policyId"
+      exclude: []
+description: "Valid: TWO_SEGMENT explicit */id include, empty exclude"
+system: false
