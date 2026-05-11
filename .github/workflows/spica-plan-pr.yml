@@ -30,7 +30,7 @@ jobs:
           test -n "$SPICA_API_KEY" || (echo "Missing secret: SPICA_API_KEY" && exit 1)
 
       - name: Install Spica CLI
-        run: npm install -g @spica/cli@0.18.32
+        run: npm install -g @spica/cli@0.18.33
 
       - name: Configure Spica context
         run: |
